@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: vercel-keep-alive
+    schedule: "*/5 * * * *"
+    runtime: node
+    buildCommand: "npm install"
+    startCommand: "node index.js"
